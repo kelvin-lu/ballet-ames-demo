@@ -36,5 +36,5 @@ tables:
       sep: ','
 
 github:
-  pruning_action: commit_to_master
+  pruning_action: make_pull_request
   accept_passing_features: yes
