@@ -8,7 +8,7 @@ problem:
   problem_type: regression
   problem_type_details:
     scorer: neg_mean_squared_log_error
-    classification_type: 
+    classification_type:
 
 contrib:
   module_name: ames.features.contrib
@@ -22,17 +22,19 @@ data:
   targets_table_name: targets
 
 tables:
-  -
-    name: entities
+  - name: entities
     path: entities.csv
     pd_read_kwargs:
       index_col: 0
       header: 0
-      sep: ","
-  -
-    name: targets
+      sep: ','
+  - name: targets
     path: targets.csv
     pd_read_kwargs:
       index_col: 0
       header: 0
-      sep: ","
+      sep: ','
+
+github:
+  pruning_action: commit_to_master
+  accept_passing_features: yes
